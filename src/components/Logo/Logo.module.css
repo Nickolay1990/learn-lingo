@@ -1,0 +1,33 @@
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 390px;
+}
+
+.spanWrapper {
+  display: flex;
+  flex-direction: column;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 28px;
+}
+
+.logoSpan {
+  height: 14px;
+}
+
+.logoUp {
+  background-color: #338af3;
+}
+
+.logoDown {
+  background-color: #ffda44;
+}
+
+.logoText {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+}

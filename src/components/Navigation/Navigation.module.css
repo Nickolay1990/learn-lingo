@@ -1,0 +1,8 @@
+.navList {
+  display: flex;
+  gap: 28px;
+}
+
+.navLink {
+  line-height: 125%;
+}
