@@ -3,6 +3,8 @@
   --font-size: 16px;
   --fonr-weight: 400;
   --main-color: #121417;
+  --light-yellow: #fbe9ba;
+  --dark-yellow: #f4c550;
 }
 
 body {
@@ -26,4 +28,9 @@ a {
 ul,
 ol {
   list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
 }

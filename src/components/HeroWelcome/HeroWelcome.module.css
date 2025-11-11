@@ -1,0 +1,39 @@
+.wrapper {
+  width: 720px;
+  background-color: #f8f8f8;
+  border-radius: 30px;
+  padding: 98px 108px 98px 64px;
+}
+
+.HeroTitile {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+  margin-bottom: 32px;
+}
+
+.italic {
+  font-style: italic;
+  font-weight: 400;
+  background-color: var(--light-yellow);
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+.text {
+  line-height: 137%;
+  letter-spacing: -0.02em;
+  width: 471px;
+  margin-bottom: 64px;
+}
+
+.btn {
+  border: none;
+  padding: 16px 88px;
+  background-color: var(--dark-yellow);
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 156%;
+}

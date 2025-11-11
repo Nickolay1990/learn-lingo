@@ -1,0 +1,21 @@
+.icon {
+  width: 20px;
+  height: 20px;
+  stroke: var(--dark-yellow);
+  fill: transparent;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  margin-right: 16px;
+}
+
+.text {
+  font-weight: 700;
+  line-height: 125%;
+}

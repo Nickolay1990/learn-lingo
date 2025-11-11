@@ -1,8 +1,14 @@
 .navList {
   display: flex;
+  align-items: center;
   gap: 28px;
+  height: 100%;
 }
 
 .navLink {
   line-height: 125%;
+}
+
+.nav {
+  margin-right: 268px;
 }
