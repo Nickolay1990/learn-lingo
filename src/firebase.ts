@@ -1,8 +1,9 @@
 import { initializeApp } from "firebase/app";
 import { getDatabase, ref } from "firebase/database";
+import { getAuth } from "firebase/auth";
 
-const myKey = import.meta.env.API_KEY;
-const AUTH_DOMAIN = import.meta.env.AUTH_DOMAIN;
+const myKey = import.meta.env.VITE_API_KEY;
+const AUTH_DOMAIN = import.meta.env.VITE_AUTH_DOMAIN;
 const PROJECT_ID = import.meta.env.PROJECT_ID;
 const STORAGE_BUCKET = import.meta.env.STORAGE_BUCKET;
 const MESSAGING_SENDER_ID = import.meta.env.MESSAGING_SENDER_ID;
@@ -20,6 +21,7 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
 
 const database = getDatabase(app);
 

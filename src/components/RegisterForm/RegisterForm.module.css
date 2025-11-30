@@ -1,0 +1,88 @@
+.formWrapper {
+  padding: 64px;
+  width: 565px;
+}
+
+.formTitle {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+
+.formText {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 137%;
+  color: rgba(18, 20, 23, 0.8);
+  margin-bottom: 40px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.input {
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  border-radius: 12px;
+  width: 100%;
+  outline: none;
+  padding: 16px 18px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 137%;
+  color: var(--main-color);
+}
+
+.input::placeholder {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 137%;
+  color: var(--main-color);
+}
+
+.relative {
+  position: relative;
+}
+
+.eyePick {
+  fill: transparent;
+  stroke: var(--main-color);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 17px;
+  right: 17px;
+}
+
+.submitBtn {
+  padding: 16px 0;
+  border-radius: 12px;
+  border: none;
+  background-color: var(--dark-yellow);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 156%;
+  color: var(--main-color);
+}
+
+.error {
+  color: #db4747;
+  position: absolute;
+  top: 55px;
+  left: 17px;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 137%;
+}

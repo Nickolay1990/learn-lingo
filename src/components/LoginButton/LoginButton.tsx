@@ -1,8 +1,12 @@
 import css from "./LoginButton.module.css";
 
-const LoginButton = () => {
+interface LoginButtonProps {
+  onOpen: () => void;
+}
+
+const LoginButton = ({ onOpen }: LoginButtonProps) => {
   return (
-    <button className={css.btn}>
+    <button className={css.btn} onClick={onOpen}>
       <svg className={css.icon}>
         <use href="/symbol-defs.svg#icon-log-in"></use>
       </svg>

@@ -1,7 +1,15 @@
 import css from "./RegisterButton.module.css";
 
-const RegisterButton = () => {
-  return <button className={css.btn}>Registration</button>;
+interface RegisterButtonProps {
+  onOpen: () => void;
+}
+
+const RegisterButton = ({ onOpen }: RegisterButtonProps) => {
+  return (
+    <button className={css.btn} onClick={onOpen}>
+      Registration
+    </button>
+  );
 };
 
 export default RegisterButton;
