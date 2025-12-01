@@ -23,6 +23,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 
-const database = getDatabase(app);
+export const database = getDatabase(app);
 
 export const starCountRef = ref(database, "/teachers");

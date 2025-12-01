@@ -7,8 +7,10 @@ export const Header = () => {
   return (
     <header className={css.pageHeader}>
       <Logo />
-      <Navigation />
-      <AuthSection />
+      <div className={css.navWrapper}>
+        <Navigation />
+        <AuthSection />
+      </div>
     </header>
   );
 };

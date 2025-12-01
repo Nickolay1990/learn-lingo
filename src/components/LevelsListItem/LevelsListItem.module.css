@@ -1,0 +1,21 @@
+.item {
+  border-radius: 35px;
+  padding: 8px 12px;
+  border: 1px solid rgba(18, 20, 23, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item:first-child {
+  border: none;
+  background-color: var(--dark-yellow);
+}
+
+.text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  color: var(--main-color);
+}

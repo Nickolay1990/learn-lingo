@@ -1,0 +1,25 @@
+.text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--label-color);
+}
+
+.strong {
+  color: var(--main-color);
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 4px;
+}
+
+.text:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.wrapper {
+  margin-bottom: 16px;
+}

@@ -1,0 +1,120 @@
+.lang {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--label-color);
+  margin-bottom: 8px;
+}
+
+.name {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  color: var(--main-color);
+}
+
+.bookIcon {
+  width: 16px;
+  height: 16px;
+  fill: transparent;
+  stroke: var(--main-color);
+}
+
+.stringTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.stringTopRight {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+
+.topString {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--main-color);
+  position: relative;
+}
+
+.separator::after {
+  content: "";
+  width: 1px;
+  height: 16px;
+  background-color: rgba(18, 20, 23, 0.2);
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: -16px;
+  z-index: 1000;
+}
+
+.statusString {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.starIcon {
+  width: 16px;
+  height: 16px;
+  fill: #ffc531;
+}
+
+.ratingString {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.green {
+  color: var(--green);
+}
+
+.heart {
+  width: 26px;
+  height: 26px;
+  fill: transparent;
+  stroke: var(--main-color);
+}
+
+.lastString {
+  display: flex;
+  gap: 64px;
+}
+
+.modalInner {
+  padding: 64px;
+  width: 565px;
+}
+
+.title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+
+.text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 137%;
+  color: rgba(18, 20, 23, 0.8);
+}
+
+.clickedHeart {
+  fill: var(--dark-yellow);
+  stroke: var(--dark-yellow);
+}

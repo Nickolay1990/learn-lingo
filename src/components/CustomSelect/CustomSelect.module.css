@@ -1,0 +1,68 @@
+.trigger {
+  background: var(--white-color);
+  border-radius: 14px;
+  padding: 16px 18px;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 111%;
+  color: var(--main-color);
+}
+
+.languages {
+  width: 221px;
+}
+
+.levels {
+  width: 198px;
+}
+
+.price {
+  width: 124px;
+}
+
+.content {
+  margin-top: 4px;
+  background: var(--white-color);
+  border-radius: 12px;
+  padding: 14px 18px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 111%;
+  color: rgba(18, 20, 23, 0.2);
+}
+
+.item {
+  padding: 8px 0px;
+  cursor: pointer;
+}
+
+.item:hover {
+  color: var(--main-color);
+}
+
+.item[data-highlighted] {
+  outline: none;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: transparent;
+  stroke: var(--main-color);
+}
+
+.label {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--label-color);
+  margin-bottom: 8px;
+}

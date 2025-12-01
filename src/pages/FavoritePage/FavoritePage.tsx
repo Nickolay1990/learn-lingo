@@ -1,13 +1,13 @@
 import { onValue } from "firebase/database";
 import CustomSelect from "../../components/CustomSelect/CustomSelect";
-import css from "./Teachers.module.css";
+import css from "./FavoritePage.module.css";
 import { starCountRef } from "../../firebase";
 import { useEffect, useState } from "react";
-import type { Teacher } from "../../types/teachers";
 import TeachersList from "../../components/TeachersList/TeachersList";
+import type { Teacher } from "../../types/teachers";
 import { PAGE_SIZE } from "../../constants/constants";
 
-const TeachersPage = () => {
+const FavoritePage = () => {
   const [allTeachers, setAllTeachers] = useState<Teacher[]>([]);
   const [filteredTeachers, setFilteredTeachers] = useState<Teacher[]>([]);
   const [teachers, setTeachers] = useState<Teacher[]>([]);
@@ -15,22 +15,27 @@ const TeachersPage = () => {
   const [levels, setLevels] = useState<string[]>([]);
   const [prices, setPrices] = useState<string[]>([]);
   const [pageSize, setPageSize] = useState<number>(PAGE_SIZE);
-
   const [selectedLanguage, setSelectedLanguage] = useState("All");
   const [selectedLevel, setSelectedLevel] = useState("All");
   const [selectedPrice, setSelectedPrice] = useState("All");
+  const [favoriteList] = useState<string[]>(() => {
+    const storage = localStorage.getItem("favorites");
+    return storage ? JSON.parse(storage) : [];
+  });
 
   useEffect(() => {
     const unsubscribe = onValue(starCountRef, (snapshot) => {
       const data: Teacher[] = snapshot.val() || [];
-      setAllTeachers(data);
+      const favoriteTeachers = data.filter((t) => favoriteList.includes(t.id));
+
+      setAllTeachers(favoriteTeachers);
       setLanguages([...new Set(data.flatMap((t) => t.languages))]);
       setLevels([...new Set(data.flatMap((t) => t.levels))]);
       setPrices([...new Set(data.map((t) => `${t.price_per_hour} $`))]);
     });
 
     return () => unsubscribe();
-  }, []);
+  }, [favoriteList]);
 
   useEffect(() => {
     const filtered = allTeachers.filter((t) => {
@@ -87,4 +92,4 @@ const TeachersPage = () => {
   );
 };
 
-export default TeachersPage;
+export default FavoritePage;

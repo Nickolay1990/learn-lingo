@@ -1,19 +1,30 @@
+import { useUserStore } from "../../stores/user.store";
 import css from "./Navigation.module.css";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
+  const user = useUserStore((state) => state.user);
+
   return (
     <nav className={css.nav}>
       <ul className={css.navList}>
         <li>
-          <a href="/" className={css.navLink}>
+          <Link to="/" className={css.navLink}>
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/teachers" className={css.navLink}>
+          <Link to="/teachers" className={css.navLink}>
             Teachers
-          </a>
+          </Link>
         </li>
+        {user && (
+          <li>
+            <Link to="/favorite" className={css.navLink}>
+              Favorite
+            </Link>
+          </li>
+        )}
       </ul>
     </nav>
   );

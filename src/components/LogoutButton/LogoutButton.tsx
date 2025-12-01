@@ -1,13 +1,16 @@
+import { useNavigate } from "react-router-dom";
 import { useUserStore } from "../../stores/user.store";
 import css from "./LogoutButton.module.css";
 import Cookies from "js-cookie";
 
 const LogOutButton = () => {
   const clearUser = useUserStore((state) => state.clearUser);
+  const navigation = useNavigate();
 
   const handleLogout = () => {
     Cookies.remove("accessToken");
     clearUser();
+    navigation("/");
   };
 
   return (

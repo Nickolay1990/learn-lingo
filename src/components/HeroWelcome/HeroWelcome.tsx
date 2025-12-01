@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import css from "./HeroWelcome.module.css";
 
 const HeroWelcome = () => {
@@ -12,7 +13,9 @@ const HeroWelcome = () => {
         Elevate your language proficiency to new heights by connecting with
         highly qualified and experienced tutors.
       </p>
-      <button className={css.btn}>Get started</button>
+      <Link to="/teachers" className={css.btn}>
+        Get started
+      </Link>
     </div>
   );
 };
