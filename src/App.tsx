@@ -4,9 +4,16 @@ import TeachersPage from "./pages/Teachers/Teachers.tsx";
 import Layout from "./components/Layout/Layout.tsx";
 import { useUserStore } from "./stores/user.store.ts";
 import FavoritePage from "./pages/FavoritePage/FavoritePage.tsx";
+import { useThemeStore } from "./stores/theme.store.ts";
+import { useEffect } from "react";
 
 function App() {
   const user = useUserStore((state) => state.user);
+  const theme = useThemeStore((state) => state.theme);
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
 
   return (
     <Router>

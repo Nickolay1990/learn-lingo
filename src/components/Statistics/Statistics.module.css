@@ -1,5 +1,5 @@
 .wrapper {
   padding: 40px 123px;
-  background-image: url(/border.png);
+  background-image: var(--border-image);
   background-repeat: no-repeat;
 }

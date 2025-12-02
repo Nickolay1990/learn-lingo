@@ -17,7 +17,11 @@
 .note {
   width: 360px;
   height: 176px;
-  background: linear-gradient(180deg, #eeb055 0%, #d08f38 100%);
+  background: linear-gradient(
+    180deg,
+    var(--dark-yellow-mac-first) 0%,
+    var(--dark-yellow-mac-second) 100%
+  );
   z-index: 2000;
   border-radius: 10px 10px 0 0;
   display: flex;
@@ -28,5 +32,5 @@
 .icon {
   width: 47px;
   height: 56px;
-  fill: #e7c885;
+  fill: var(--light-yellow);
 }

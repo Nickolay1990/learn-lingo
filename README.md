@@ -1,73 +1,9 @@
-# React + TypeScript + Vite
+This project is a modern web application designed to help users easily discover and book lessons with language teachers from around the world. The platform offers a smooth, user-friendly experience that allows learners to browse a large catalog of professional instructors, compare their qualifications, check their availability, and schedule lessons in just a few clicks.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The application provides a structured presentation of each teacher, including their personal information, teaching experience, languages they specialize in, and a detailed proficiency level that reflects their expertise. In addition to skill level, every teacher has an individual rating based on reviews and feedback from students who have taken lessons before. This enables learners to make informed decisions and choose the most suitable instructor for their needs, whether they are complete beginners or advanced speakers looking to refine their fluency.
 
-Currently, two official plugins are available:
+A key goal of the platform is to simplify the process of connecting language learners with qualified instructors. Users can browse teachers by language, proficiency level, popularity, rating, or teaching style. The interface is built to be intuitive and responsive, ensuring accessibility across desktops, tablets, and mobile devices. With a seamless registration and login flow, users can quickly create an account, mark favorite teachers, manage their personal preferences, and keep track of upcoming lessons.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+From a technical standpoint, the project uses a modular and scalable architecture. React, Zustand, React Router, and various modern tools are utilized to maintain global application state, manage routes, and ensure a smooth user experience. The design is fully theme-supported, allowing users to personalize the visual appearance of the website with multiple color themes, all powered by CSS variables and dynamic updates.
 
-## React Compiler
-
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Overall, this project aims to deliver a reliable and enjoyable platform for anyone seeking to learn a new language or improve existing skills through personalized, high-quality instruction from real teachers.

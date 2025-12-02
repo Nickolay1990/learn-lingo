@@ -3,13 +3,55 @@
   --font-size: 16px;
   --fonr-weight: 400;
   --main-color: #121417;
-  --light-yellow: #fbe9ba;
-  --dark-yellow: #f4c550;
-  --hover-yellow: #ffdc86;
   --white-color: #ffffff;
   --label-color: #8a8a89;
   --background: #f8f8f8;
   --green: #38cd3e;
+}
+
+[data-theme="yellow"] {
+  --dark-yellow: #f4c550;
+  --light-yellow: #fbe9ba;
+  --dark-yellow-mac-first: #eeb055;
+  --dark-yellow-mac-second: #d08f38;
+  --border-image: url("/border-yellow.png");
+  --hover-yellow: #ffdc86;
+}
+
+[data-theme="green"] {
+  --dark-yellow: #9fbaae;
+  --light-yellow: #cbded3;
+  --dark-yellow-mac-first: #295761;
+  --dark-yellow-mac-second: #183e49;
+  --border-image: url("/border-green.png");
+  --hover-yellow: #49c47c;
+}
+
+[data-theme="blue"] {
+  --dark-yellow: #9fb7ce;
+  --light-yellow: #bfd6ea;
+  --dark-yellow-mac-first: #314b6e;
+  --dark-yellow-mac-second: #1f385a;
+  --border-image: url("/border-blue.png");
+  --hover-yellow: #4880b1;
+}
+
+[data-theme="pink"] {
+  --dark-yellow: #e0a39a;
+  --light-yellow: #f2c0bd;
+  --dark-yellow-mac-first: #b03f3e;
+  --dark-yellow-mac-second: #982a27;
+  --border-image: url("/border-pink.png");
+  --hover-yellow: #c24e48;
+}
+
+[data-theme="orange"] {
+  --dark-yellow: #f0aa8d;
+  --light-yellow: #f4c8ba;
+  --dark-yellow-mac-first: #e17650;
+  --dark-yellow-mac-second: #ca5b38;
+  --border-image: url("/border-orange.png");
+  --hover-yellow: #e0552b;
 }
 
 body {
